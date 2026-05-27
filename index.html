@@ -1,102 +1,305 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <meta
+      name="description"
+      content="Gren Consulting AB erbjuder konsulttjänster inom geoteknik, miljögeoteknik, fältprovtagning och omgivningspåverkan."
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="/script.js" defer></script>
-    <title>Gren Consulting AB</title>
+    <script src="script.js" defer></script>
+    <title>Gren Consulting AB | Geoteknik och miljögeoteknik</title>
   </head>
   <body>
-    <header>
-      <section id="headerFirst">
-        <img src="/img/gren-consulting-logotyp.png" alt="Gren Consulting AB logo placeholder">
-        <h1>Vi har mer än 20 års erfarenhet</h1>
-        <button class="btn btn-primary">Kontakta oss</button>
-      </section>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="#hem" aria-label="Gren Consulting AB startsida">
+          <img src="img/gren-consulting-logotyp.png" alt="Gren Consulting AB" />
+        </a>
+        <div class="experience-mark" aria-label="Vi har mer än 20 års erfarenhet">
+          <strong>20+</strong>
+          <span>års erfarenhet inom geoteknik och miljögeoteknik</span>
+        </div>
+        <a class="btn btn-primary topbar-action" href="#kontakt">Kontakta oss</a>
+      </div>
 
-      <section id="headerMenu">
-        <ul>
-          <li>Hem</li>
-          <li>Våra tjänster</li>
-          <li>Om oss</li>
-          <li>Referenser</li>
-          <li>Kontakta oss</li>
+      <nav class="main-nav" aria-label="Huvudmeny">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          Meny
+        </button>
+        <ul id="nav-list">
+          <li><a href="#hem">Hem</a></li>
+          <li><a href="#tjanster">Våra tjänster</a></li>
+          <li><a href="#om-oss">Om oss</a></li>
+          <li><a href="#referenser">Referenser</a></li>
+          <li><a href="#kontakt">Kontakta oss</a></li>
         </ul>
-      </section>
+      </nav>
     </header>
 
     <main>
-      <section id="firstImpression">
-        <h1>Konsultation inom geoteknik <br>och miljögeoteknik</h1>
-        <div class="pairButtons">
-          <button class="btn btn-primary">Kontakta oss</button>
-          <button class="btn btn-secondary">Våra tjänster</button>
+      <section class="hero" id="hem" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Gren Consulting AB</p>
+          <h1 id="hero-title">Konsultation inom geoteknik och miljögeoteknik</h1>
+          <p>
+            Tekniskt stöd för bygg-, mark- och exploateringsprojekt i Västerås,
+            Mälardalen och övriga Sverige.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#kontakt">Kontakta oss</a>
+            <a class="btn btn-secondary" href="#tjanster">Våra tjänster</a>
+          </div>
         </div>
       </section>
 
-      <section id="aboutUs">
-        <div id="firstSection">
-          <h1>Välkommen till Gren Consulting AB</h1>
-          <p>
-            Vi har mer än 20 års erfarenhet av att utföra konsultuppdrag för
-            våra kunders räkning. Bolaget <br> Gren Consulting startade 2012 och är
-            ett aktiebolag från 2015. Vi jobbar med alla typer av <br> kunder, som
-            exempel kan nämnas privatpersoner, fastighetsföretag, entreprenörer,
-            andra <br>konsulter, kommun, landsting m.fl.
-          </p>
-          <div class="pairButtons">
-            <button class="btn btn-primary">Kontakta oss</button>
-            <button class="btn btn-blue">Läs mer om oss</button>
+      <section class="intro section" aria-labelledby="intro-title">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Välkommen</p>
+            <h2 id="intro-title">Välkommen till Gren Consulting AB</h2>
+            <p>
+              Vi har mer än 20 års erfarenhet av att utföra konsultuppdrag för
+              våra kunders räkning. Gren Consulting startade 2012 och är ett
+              aktiebolag från 2015.
+            </p>
+            <p>
+              Vi arbetar med många typer av kunder, bland annat privatpersoner,
+              fastighetsföretag, entreprenörer, andra konsulter, kommuner och
+              landsting.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="#kontakt">Kontakta oss</a>
+              <a class="btn btn-outline" href="#om-oss">Läs mer om oss</a>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <ol>
+          <ul class="highlight-list" aria-label="Vanliga uppdragsområden">
             <li>Geoteknisk utredning</li>
             <li>Miljöprovtagning</li>
             <li>Markradon</li>
             <li>Omgivningspåverkan</li>
-          </ol>
+          </ul>
         </div>
       </section>
 
-      <section id="menuGrid">
-        <div class="grid-item">
-            <img src="" alt="">
-            <h2>Miljögeoteknik</h2>
+      <section class="services section" id="tjanster" aria-labelledby="services-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Tjänster</p>
+            <h2 id="services-title">Tekniska konsulttjänster inom geoteknik och fältprovtagningar</h2>
+            <p>
+              Vi erbjuder expertis inom geoteknik, markmiljöundersökningar,
+              förorenade områden, omgivningspåverkan, tillståndsprocesser,
+              projektledning, beställarstöd samt utbildningar och kurser.
+            </p>
+          </div>
+
+          <div class="service-layout">
+            <article class="feature-panel">
+              <img
+                src="img/faltarbete_med_borrbandvagn.jpg"
+                alt="Fältarbete med geoteknisk borrbandvagn"
+              />
+              <div>
+                <h3>Brett stöd från fält till beslut</h3>
+                <p>
+                  Genom ett brett kontaktnät och samarbetspartners i branschen
+                  kan vi erbjuda tekniska lösningar för flera typer av
+                  frågeställningar och även bidra till helhetslösningar.
+                </p>
+              </div>
+            </article>
+
+            <div class="service-cards" aria-label="Tjänsteområden">
+              <article class="info-card">
+                <div class="card-media">
+                  <img src="img/geoteknisk_faltundersokning.jpg" alt="Geoteknisk fältundersökning med borrbandvagn" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Geoteknik</h3>
+                  <p class="card-summary">Utredningar och fältprovtagning med geoteknisk borrbandvagn eller grävare.</p>
+                  <ul class="card-points">
+                    <li>Underlag inför byggnation och exploatering</li>
+                    <li>Bedömning av jordlager och grundläggning</li>
+                    <li>Teknisk rådgivning genom projektets skeden</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="info-card">
+                <div class="card-media">
+                  <img src="img/miljoprovtagning_med_borrbandvagn.jpg" alt="Miljöprovtagning med borrbandvagn" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Markmiljö</h3>
+                  <p class="card-summary">Fältprovtagning, ackrediterade kemiska analyser och underlag för bedömning.</p>
+                  <ul class="card-points">
+                    <li>Provtagningsplanering och fältarbete</li>
+                    <li>Analysbeställning hos ackrediterade laboratorier</li>
+                    <li>Sammanställning för projektering och dialog</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="info-card">
+                <div class="card-media">
+                  <img src="img/IMAG2030.jpg" alt="Äldre drivmedelspump som symboliserar historiska markföroreningar" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Förorenade områden</h3>
+                  <p class="card-summary">Provtagning, analyser och tekniskt stöd i frågor som rör förorenad mark.</p>
+                  <ul class="card-points">
+                    <li>Undersökning av tidigare verksamhetsområden</li>
+                    <li>Underlag inför exploatering eller åtgärdsbedömning</li>
+                    <li>Stöd vid myndighets- och projektfrågor</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="info-card">
+                <div class="card-media">
+                  <img src="img/20150824_160251.jpg" alt="Borrbandvagn vid fältarbete i gräsmark" />
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Projektstöd</h3>
+                  <p class="card-summary">Omgivningspåverkan, tillstånd, anmälningar, projektledning och beställarstöd.</p>
+                  <ul class="card-points">
+                    <li>Teknisk samordning och praktisk planering</li>
+                    <li>Uppföljning genom projektets olika skeden</li>
+                    <li>Stöd i tillstånds- och anmälningsfrågor</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <div class="grid-item">
-            <img src="" alt="">
-            <h2>Geoteknik</h2>
+      </section>
+
+      <section class="about section" id="om-oss" aria-labelledby="about-title">
+        <div class="section-inner split reverse">
+          <div class="image-pair" aria-hidden="true">
+            <img src="img/geoteknisk_faltundersokning.jpg" alt="" />
+            <img src="img/miljoprovtagning_med_borrbandvagn.jpg" alt="" />
+          </div>
+          <div>
+            <p class="eyebrow">Om oss</p>
+            <h2 id="about-title">God samverkan och ett stort kontaktnät i branschen</h2>
+            <p>
+              Gren Consulting grundades år 2012 och är från och med 2015 ett
+              aktiebolag. Bolaget utgår från Västerås och har kunder både i
+              närområdet, i den expansiva Mälardalsregionen och i andra delar av
+              landet där utbyggnad eller exploatering pågår.
+            </p>
+            <p>
+              Erfarenheten efterfrågas av privata företag, bygg- och
+              fastighetsbolag, kommuner och statliga verk. Arbetet utgår från
+              kundernas frågeställningar och behov, med målet att bidra till
+              hållbara lösningar på tekniska utmaningar.
+            </p>
+            <p>
+              Bolaget grundades av VD Mats Gren, civilingenjör VoV från KTH, som
+              har över 20 års erfarenhet som konsult inom anläggnings- och
+              infrastrukturområdet i byggbranschen.
+            </p>
+          </div>
         </div>
-        <div class="grid-item">
-            <img src="" alt="">
-            <h2>Referensuppdrag</h2>
+      </section>
+
+      <section class="references section" id="referenser" aria-labelledby="references-title">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <p class="eyebrow">Referenser</p>
+            <h2 id="references-title">Referensuppdrag och erfarenhetsområden</h2>
+            <p>
+              Kontakta oss gärna om du vill ha referenser från någon av våra
+              uppdragsgivare. Här visas exempel på områden där vi ofta bidrar
+              med tekniskt stöd.
+            </p>
+          </div>
+
+          <div class="reference-grid">
+            <article class="info-card">
+              <div class="card-media">
+                <img src="img/skruvprovtagning.jpg" alt="Skruvprovtagning vid fältarbete" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Geoteknisk fältundersökning</h3>
+                <p class="card-summary">Provtagning och tekniska underlag inför bygg- och markprojekt.</p>
+                <ul class="card-points">
+                  <li>Beslutsunderlag för konstruktion</li>
+                  <li>Fältdata inför grundläggning</li>
+                  <li>Stöd för fortsatt projektering</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <div class="card-media">
+                <img src="img/vibrationsmatning.jpg" alt="Utrustning för vibrationsmätning" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Omgivningspåverkan</h3>
+                <p class="card-summary">Bedömningar kopplade till påverkan på omgivande byggnader och miljöer.</p>
+                <ul class="card-points">
+                  <li>Riskbedömning inför arbeten nära bebyggelse</li>
+                  <li>Underlag för planering och uppföljning</li>
+                  <li>Tekniskt stöd vid känsliga miljöer</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <div class="card-media">
+                <img src="img/forstasida.jpg" alt="Byggarbetsplats med markarbeten" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Beställarstöd</h3>
+                <p class="card-summary">Projektledning, teknisk samordning och stöd i tillståndsfrågor.</p>
+                <ul class="card-points">
+                  <li>Rådgivning från planering till genomförande</li>
+                  <li>Samordning med entreprenörer och konsulter</li>
+                  <li>Kontroll av tekniska frågor i projektet</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-        <img src="" alt="Gren Consulting AB logo">
+    <footer class="site-footer" id="kontakt">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="img/gren-consulting-logotyp-vit.png" alt="Gren Consulting AB" />
+          <p>
+            Har du frågor eller funderingar? Hör gärna av dig så berättar vi mer
+            om vår erfarenhet och kompetens inom ditt område.
+          </p>
+        </div>
 
-        <section id="contactGrid">
-            <div class="contact">
-                <h3><strong>VD Mats Gren</strong></h3>
-                <p><strong>Geotekniker, Civilingenjör VoV</strong></p>
-            </div>
+        <div class="contact-grid" aria-label="Kontaktuppgifter">
+          <address>
+            <h2>Gren Consulting AB</h2>
+            <p>Mällringe 7<br />725 92 Västerås</p>
+          </address>
 
-            <div class="contact">
-                <h3><strong>VD Mats Gren</strong></h3>
-                <p><strong>Geotekniker, Civilingenjör VoV</strong></p>
-            </div>
+          <address>
+            <h2>Mats Gren</h2>
+            <p>VD, Geotekniker<br />Civilingenjör VoV</p>
+            <a href="tel:+46728367136">0728-36 71 36</a>
+            <a href="mailto:mats@gconsult.se">mats@gconsult.se</a>
+          </address>
 
-            <div class="contact">
-                <h3><strong>VD Mats Gren</strong></h3>
-                <p><strong>Geotekniker, Civilingenjör VoV</strong></p>
-            </div>
-        </section>
+          <address>
+            <h2>Laila Gren</h2>
+            <p>Miljöingenjör</p>
+            <a href="tel:+46702687273">0702-68 72 73</a>
+            <a href="mailto:laila@gconsult.se">laila@gconsult.se</a>
+          </address>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; Gren Consulting AB</p>
     </footer>
   </body>
 </html>
